@@ -65,7 +65,7 @@ async function addContact(name, email, phone) {
       );
       fs.writeFile(contactsPath, newContactList);
       const newList = JSON.parse(newContactList);
-      console.log("Додали контакт по його id:".green);
+      console.log("Додали новий контакт:".green);
       console.table(newList);
     }
   } catch (error) {
